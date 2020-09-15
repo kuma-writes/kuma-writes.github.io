@@ -18,7 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+locale: "en-US"
 title: Kuma Writes...
+subtitle: "the miscellany of a simple life"
+name: "Kuma"
 email: joonsan@mac.com
 description: >- # this means to ignore newlines until "baseurl:"
   A collection of writings from the mind of a simple beark, "Kuma"
@@ -26,6 +29,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  kuma-writes
+repository: "kuma-writes/kuma-writes.github.io"
+read_time: true
 
 # Build settings
 # theme: minima
