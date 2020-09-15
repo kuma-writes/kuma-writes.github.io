@@ -1,6 +1,8 @@
+---
 Date: 2020-01-07
 Title: On-Hand Fish Stew (Instant Pot)
 *Yield*: 6 dinner servings
+---
 
 __INGREDIENTS__
 
