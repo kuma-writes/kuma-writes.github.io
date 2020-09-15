@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -18,28 +18,110 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-locale: "en-US"
-title: Kuma Writes...
-subtitle: "the miscellany of a simple life"
-name: "Kuma"
-email: joonsan@mac.com
-description: >- # this means to ignore newlines until "baseurl:"
-  A collection of writings from the mind of a simple beark, "Kuma"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://kuma-writes.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+remote_theme	: "mmistakes/minimal-mistakes@4.20.2"
+
+minimal_mistakes_skin	: "air" # "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+#Site Settings
+locale            : "en-US"
+title             : "Kuma Writes..."
+# title_separator	: "-"
+subtitle		      : "the miscellany of a simple life"
+name              : &name "Kuma"
+description       : &description "A collection of writings from the mind of a simple bear"
+url               : https://kuma-writes.github.io
+# baseurl         :
+repository        : "kuma-writes/kuma-writes.github.io"
+# teaser		:
+logo              : "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+# breadcrumbs            : false # true, false (default)
+words_per_minute         : 200
+
+# search            : true
+# search_full_content   : true
+
+#email            : joonsan@mac.com
 # twitter_username: jekyllrb
 github_username:  kuma-writes
-repository: "kuma-writes/kuma-writes.github.io"
-logo: "/assets/images/88x88.png"
-read_time: true
+
+# Site Author
+author:
+  name            : *name
+  #avatar         : "/assets/images/teacup_bear.png"
+  bio             : "Just another nameless internet author"
+  location        : "Warwick, RI"
 
 # Build settings
 # theme: minima
-remote_theme: "mmistakes/minimal-mistakes@4.20.1"
-minimal_mistakes_skin: "air"
+
+include:
+  - _pages
+exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Collections
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _recipes
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: single
+      author_profile: true
+      share: false
+
 
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
   - jekyll-include-cache
 
 # Exclude from processing.
@@ -50,14 +132,3 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
