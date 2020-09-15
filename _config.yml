@@ -30,6 +30,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  kuma-writes
 repository: "kuma-writes/kuma-writes.github.io"
+logo: "/assets/images/88x88.png"
 read_time: true
 
 # Build settings
