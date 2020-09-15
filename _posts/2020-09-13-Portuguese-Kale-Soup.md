@@ -1,6 +1,7 @@
 ---
-Date: 2020-09-13
-Title: Portuguese Kale Soup
+date: 2020-09-13
+title: "Portuguese Kale Soup"
+layout: recipe
 *Yield*: 4-6 dinner servings
 ---
 

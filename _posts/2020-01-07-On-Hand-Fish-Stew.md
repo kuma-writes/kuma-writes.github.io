@@ -1,6 +1,7 @@
 ---
-Date: 2020-01-07
-Title: On-Hand Fish Stew (Instant Pot)
+date: 2020-01-07
+title: "On-Hand Fish Stew (Instant Pot)"
+layout: recipe
 *Yield*: 6 dinner servings
 ---
 
