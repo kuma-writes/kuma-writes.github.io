@@ -1,9 +1,10 @@
 ---
-date: 2020-01-07
-title: "On-Hand Fish Stew (Instant Pot)"
 layout: recipe
-*Yield*: 6 dinner servings
+title: "On-Hand Fish Stew (Instant Pot)"
+date: 2020-01-07
 ---
+
+*Yield*: 6 dinner servings
 
 __INGREDIENTS__
 

@@ -1,9 +1,11 @@
 ---
-date: 2020-09-13
-title: "Portuguese Kale Soup"
 layout: recipe
-*Yield*: 4-6 dinner servings
+title: "Portuguese Kale Soup"
+date: 2020-09-13
 ---
+
+*Yield*: 4-6 dinner servings
+
 
 __INGREDIENTS__
 
